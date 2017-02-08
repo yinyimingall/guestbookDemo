@@ -1,0 +1,6 @@
+<h1>
+  Express Guestbook
+  <a href="/new-entry" class="btn btn-primary pull-right">
+    写个留言
+  </a>
+</h1>

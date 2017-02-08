@@ -1,0 +1,9 @@
+{{extend ("./layouts/default")}}
+
+{{#block ("head")}}
+
+{{/block}}
+
+{{#block ("body")}}
+<h2>404! Page not found.</h2>
+{{/block}}

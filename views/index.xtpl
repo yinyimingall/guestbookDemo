@@ -1,0 +1,34 @@
+{{extend ("./layouts/default")}}
+
+{{#block ("head")}}
+<style>
+
+</style>
+{{/block}}
+
+{{#block ("body")}}
+{{{include ("./layouts/header")}}}
+
+{{#if( entries.length)}}
+
+{{#each(entries)}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="text-muted pull-right">
+      {{this.published}}
+    </div>
+    {{this.title}}
+  </div>
+  <div class="panel-body">
+    {{this.content}}
+  </div>
+</div>
+{{/each}}
+
+{{else}}
+
+没有条目！ <a href="/new-entry">添加一个</a>
+{{/if}}
+
+
+{{/block}}
